@@ -31,7 +31,8 @@ if __name__ == '__main__':
     name = dmenu_prompt(ws['num'])
     if not len(name):
         exit(0)
-    i3.command("rename workspace {0} to \"{1}: {2}\"".format(
+    print ws['name']
+    i3.command("rename workspace \"{0}\" to \"{1}: {2}\"".format(
         ws['name'],
         ws['num'],
         name
