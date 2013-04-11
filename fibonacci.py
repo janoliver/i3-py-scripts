@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 import i3
 import os
 import time

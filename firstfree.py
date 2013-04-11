@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/python2
+
 """
 Find the first free workspace and switch to it
 
