@@ -12,9 +12,9 @@ def main():
 	workspaces = i3.get_workspaces()
 	workints = list()
 	for w in workspaces:
-		workints.append(w['name'])
+		workints.append(w['num'])
 	for i in range(1,11):
-		if str(i) not in workints:
+		if i not in workints:
 			i3.workspace(str(i))
 			break
 
