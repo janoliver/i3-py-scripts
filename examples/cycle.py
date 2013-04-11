@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 import i3
 import time
 
@@ -13,7 +15,7 @@ def cycle():
         i3.focus(con_id=window['id'])
         time.sleep(0.5)
     # focus the old workspace on each screen
-    for wks in current_per_screen:
+    for wks in workspace_per_screen:
         i3.workspace(wks['current_workspace'])
     # focus the original windows
     for window in current:
